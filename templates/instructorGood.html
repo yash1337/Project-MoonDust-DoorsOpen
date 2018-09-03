@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DoorsOpen!</title>
+  </head>
+  <body>
+	<h1> Welcome Prof. {{name}}</h1>
+	<form method="post">
+		<table>
+			<tr>
+				<td class="lable">
+					Class: <input type="text" name="Class" value="{{Class}}">
+				</td>
+				<td class="error">
+					{{error_Class}}
+				</td>
+			</tr>
+			<tr>
+				<td class="lable">
+					Section: <input type="text" name="section" value="{{section}}">
+				</td>
+				<td class="error">
+					{{error_section}}
+				</td>
+			</tr>
+			<tr>
+				<td class="lable">
+					Class Code: <input type="text" name="section" value="{{ClassCode}}">
+				</td>
+				<td class="error">
+					{{error_ClassCode}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" formaction="/addClass" name="addClass" value="AddClass">
+				</td>
+			</tr>
+		</table>
+	</form>
+  </body>

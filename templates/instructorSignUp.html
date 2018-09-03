@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DoorsOpen!</title>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+		<form method="post">
+			<table>
+				<tr>
+					<td class="lable">
+						Name: <input type="text" name="name" value="{{name}}">
+					</td>
+					<td class="error">
+						{{error_name}}
+					</td>
+				</tr>
+				<tr>
+					<td class="lable">
+						University: <input type="text" name="university" value="{{university}}">
+					</td>
+					<td class="error">
+						{{error_university}}
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="lable">
+						Email: <input type="text" name="email" value="{{email}}">
+					</td>
+					<td class="error">
+						{{error_email}}
+					</td>
+				</tr>
+				<!--
+				<tr>
+					<td class="lable">
+						Section: <input type="text" name="section" value="{{section}}"><br>
+					</td>
+					<td class="error">
+						{{error_section}}
+					</td>
+				</tr>
+				-->
+				<tr>
+					<td>
+						<input type="submit" formaction="/validateInsSignUp" name="signup" value="Sign Up">
+					</td>
+				</tr>
+			</table>		
+		</form>
+	
+  </body>
+</html>
